@@ -1,0 +1,34 @@
+{
+    "baseUrl": "https://www.sapfioneer.com",
+    "bookmarks": ["Banking", "Insurance", "Finance & ESG", "Services", "Partners", "Company", "Resources"],
+    "errorFields" : [
+      { 
+        "field": "First name", 
+        "error": "Please complete this required field." 
+      },
+      { 
+        "field": "Last name", 
+        "error": "Please complete this required field." 
+      },
+      { 
+        "field": "Work email", 
+        "error": "Please complete this required field." 
+      },
+      { 
+        "field": "Country", 
+        "error": "Please select an option from the dropdown menu." 
+      },
+      { 
+        "field": "How can we help you?", 
+        "error": "Please complete this required field." 
+      },
+      { 
+        "field": "receive our latest updates", 
+        "error": "Please complete this required field." 
+      },
+      {
+        "field": "Please complete all",
+        "error": "Please complete all required fields."
+      }
+    ]
+}

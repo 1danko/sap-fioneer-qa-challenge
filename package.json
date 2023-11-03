@@ -1,5 +1,19 @@
 {
+  "name": "sap-fioneer-qa-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open"
+  },
+  "keywords": [],
+  "author": "s.malaichuk",
+  "license": "ISC",
   "dependencies": {
-    "cypress": "^13.4.0"
+    "cypress": "^13.3.3"
+  },
+  "devDependencies": {
+    "cypress-real-events": "^1.11.0",
+    "cypress-xpath": "^2.0.1"
   }
 }

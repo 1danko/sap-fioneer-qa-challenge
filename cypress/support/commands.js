@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Prevent Cypress from failing the test
+    return false;
+});
+
+Cypress.Commands.add('getContactUsIframe', () => {
+    return cy
+        .get('#hs-form-iframe-0')
+        .its('0.contentDocument.body').should('not.be.empty')      
+        .then(cy.wrap);
+})
