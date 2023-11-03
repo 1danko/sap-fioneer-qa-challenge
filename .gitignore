@@ -1,2 +1,5 @@
 *node_modules/
 cypress/screenshots/
+cypress/results/
+cypress/*.json
+mochawesome-report/

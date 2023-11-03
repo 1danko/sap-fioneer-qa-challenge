@@ -1,6 +1,5 @@
 name: SAP Fioneer E2E tests
 on:
-  push:
   pull_request:
     branches:
       - master
@@ -15,5 +14,5 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v6
           with:
-            command: npm run e2e-sap-fioneer-tests
+            command: npx cypress run
             browser: chrome
