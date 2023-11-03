@@ -41,8 +41,11 @@ The framework consists of the following folders and files:
 
     .
     ├── **e2e** folder: contains all cypress tests 
+
     ├── **fixtures** folder: contains test data for the tests 
+    
     ├── **pages** folder: contains page objects for the tests
+    
     └── **support** folder: contains additional commands and functions for the tests
 
 - **.gitignore** file: specifies the files and folders to be ignored by Git
