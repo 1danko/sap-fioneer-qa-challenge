@@ -29,7 +29,7 @@ npm install
 ```
 4. Run the tests using this command:
 ```
-npm run tests
+npm run tests-with-report
 ```
 
 ## Framework Structure
