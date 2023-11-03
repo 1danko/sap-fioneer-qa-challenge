@@ -1,5 +1,30 @@
 {
+  "name": "sap-fioneer-qa-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "e2e-sap-fioneer-tests-headless": "npx cypress run --browser chrome --spec \"cypress/e2e/sap-fioneer.cy.js\"",
+    "e2e-sap-fioneer-tests": "npx cypress run --browser chrome --headed --spec \"cypress/e2e/sap-fioneer.cy.js\"",
+    "report:merge": "mochawesome-merge cypress/results/*.json -o cypress/report.json",
+    "report:open": "open-cli ./cypress/results/sap-fioneer.html",
+    "report:generate": "marge cypress/report.json --charts true",
+    "tests-headless-with-report": "npm run e2e-sap-fioneer-tests-headless && npm run report:merge && npm run report:generate && npm run report:open",
+    "tests-with-report": "npm run e2e-sap-fioneer-tests && npm run report:merge && npm run report:generate && npm run report:open"
+  },
+  "keywords": [],
+  "author": "s.malaichuk",
+  "license": "ISC",
   "dependencies": {
-    "cypress": "^13.4.0"
+    "cypress": "^13.3.3"
+  },
+  "devDependencies": {
+    "cypress-real-events": "^1.11.0",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
