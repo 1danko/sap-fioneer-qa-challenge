@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "open": "cypress open"
+    "open": "cypress open",
+    "e2e-sap-fioneer-tests": "npx cypress run --spec \"cypress/e2e/sap-fioneer.cy.js\""
   },
   "keywords": [],
   "author": "s.malaichuk",
