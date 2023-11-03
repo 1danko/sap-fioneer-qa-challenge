@@ -38,6 +38,7 @@ The framework consists of the following folders and files:
 
 - **.github/workflows** folder: defines the [gitgub-actions pipeline](https://github.com/1danko/sap-fioneer-qa-challenge/actions) for running the tests after creating pull requests to master branch
 - **cypress** 
+    .
     ├── **e2e** folder: contains all cypress tests 
     ├── **fixtures** folder: contains test data for the tests 
     ├── **pages** folder: contains page objects for the tests
